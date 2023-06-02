@@ -16,13 +16,12 @@ Records the history of all changes made to the project.
 
 Upcoming features:
 
--   Scrolling inside code blocks fixed
 -   Writing tests and adding github test action
 -   Hopefully new docs
 
 ### 0.3.10
 
-Add Pinia store
+Add Pinia store and fix copy button position while scrolling inside code blocks.
 
 Version `0.3.10` was deployed on **3rd June, 2023**
 
