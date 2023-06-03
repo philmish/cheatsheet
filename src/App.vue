@@ -152,7 +152,7 @@ async function renderMarkdownFile() {
 
     const clipboard = new ClipboardJs(".clipboard", {
         text: (preIconElement) => {
-            return preIconElement.nextElementSibling.innerText;
+            return preIconElement.parentElement.nextElementSibling.querySelector("code").innerText;
         },
     });
     clipboard.on("success", (e) => {
@@ -169,8 +169,12 @@ async function renderMarkdownFile() {
 }
 
 function addCopyElementToPreElements(content) {
-    return content.replaceAll(/\<pre\>/g, (value) => {
-        return `${value}<div class="clipboard-wrapper"><div class="flex-1"></div><span class="clipboard  material-symbols-outlined">content_copy</span></div>`;
+    content = content.replaceAll(/\<pre\>/g, (value) => {
+        return `<div class="code-block-wrapper"><div class="clipboard-wrapper"><div class="flex-filler"></div><span class="clipboard  material-symbols-outlined">content_copy</span></div>${value}`;
+    });
+
+    return content.replaceAll(/\<\/pre\>/g, (value) => {
+        return `${value}<\/div>`;
     });
 }
 

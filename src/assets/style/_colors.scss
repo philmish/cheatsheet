@@ -5,7 +5,7 @@
 $cs-white: #fdfffc;
 $cs-black: #0d0221;
 $cs-primary-color: #023047;
-$cs-secondary-color: #ffb703;
+$cs-secondary-color: #ff035f;
 // Color shades
 $cs-primary-color-lighter: mix(white, $cs-primary-color, 50%);
 $cs-secondary-color-lighter: mix(white, $cs-secondary-color, 50%);
@@ -13,9 +13,11 @@ $cs-secondary-color-lighter: mix(white, $cs-secondary-color, 50%);
 // App theme colors
 $cs-app-light: $cs-white;
 $cs-app-light-codeblock: mix(black, $cs-white, 20%);
+$cs-app-light-blockquote: mix(#ff5b76, $cs-white, 20%);
 $cs-font-light: $cs-black;
 $cs-app-dark: $cs-black;
 $cs-app-dark-codeblock: mix(white, $cs-black, 20%);
+$cs-app-dark-blockquote: mix(#ff5b76, $cs-black, 20%);
 $cs-font-dark: $cs-white;
 
 $cs-app-dark: $cs-black;
