@@ -12,12 +12,19 @@ Since the cheat sheet was developed for private use only, we apologize for any i
 
 Records the history of all changes made to the project.
 
-### 0.3.11 => Currently under development
+### 0.3.12 => Currently under development
 
 Upcoming features:
 
 -   Writing tests and adding github test action
 -   Hopefully new docs
+
+### 0.3.11
+
+Add some markdown style improvments.  
+Fix copy button position
+
+Version `0.3.11` was deployed on **XXX June, 2023**
 
 ### 0.3.10
 
@@ -116,94 +123,56 @@ Other changes made:
 
 Version `0.3.0` was deployed on **27th December, 2022**
 
-### 0.2.1
+<br>
+<br>
 
-Styles have been adjusted, but these are still under development. Adjustments have been made to the spacing in the rendered markdown files and to the colors.
+### Versions 0.2.0 - 0.2.1
 
-Other changes made:
+#### Features
 
--   Update document title when rendering new pages
--   Fixed bug (Recent search), if there was no recent search, no search results were displayed
+-   Add this landingpage an da `README.md` file for other developers
+-   Do some style improvements
+-   Update the document title tag for each page
+-   Fix a bug in search
 
+#### New documents in this versions
+
+-   [Homebrew](?path=src/docs/basics/homebrew.md)
+-   [Node.js](?path=src/docs/basics/node.js.md)
+-   [Node Version Manager (nvm)](<?path=src/docs/basics/node_version_manager_(nvm).md>)
+
+#### Deploy history
+
+Version `0.2.0` was deployed on **21th December, 2022**  
 Version `0.2.1` was deployed on **25th December, 2022**
 
-### 0.2.0
+<br>
+<br>
 
-Landing page file has been moved and renamed so that the `README.md` serves as developer documentation again. New location is `docs/index.md`, depending on these changes the indexing script has changed.
+### Versions 0.1.0 - 0.1.6
 
-Added some basic documentation.
+#### Features
 
-Version `0.2.0` was deployed on **21th December, 2022**
+-   Basic implementation (UI & functions)
+-   Highlightling und rendering markdown files from GitHub
+-   Search through docs with fuzzy search
+-   Generate keywords for each document by push on `main` branch
+-   Setting up the build & deploy pipeline
+-   Add a copy buttons to code blocks for easier copy the whole code
 
-### 0.1.6
+#### New documents in this versions
 
-Code can now be copied directly via a copy button, which appears as soon as a code block is hovered over with the mouse.
+-   [Git - Basics](?path=src/docs/version-control/basics.md)
+-   [Git - Branching](?path=src/docs/version-control/branching.md)
+-   [Git - Useful scripts](?path=src/docs/version-control/branching.md)
+-   [Vue.js](?path=src/docs/version-control/branching.md)
 
-Other changes made:
+#### Deploy history
 
--   Improvement of fuzzy search
--   Added a footer to the search modals that includes a help link and a link to the [fuse.js website](https://fusejs.io/)
--   Minor style adjustments
-
+Version `0.1.0` was deployed on **27th November, 2022**  
+Version `0.1.1` was deployed on **28th November, 2022**  
+Version `0.1.2` was deployed on **29th November, 2022**  
+Version `0.1.3` was deployed on **02th December, 2022**  
+Version `0.1.4` was deployed on **05th December, 2022**  
+Version `0.1.5` was deployed on **09th December, 2022**  
 Version `0.1.6` was deployed on **20th December, 2022**
-
-### 0.1.5 [HOTFIX!]
-
-Sensitive data has been removed from the code.
-
-Other changes made:
-
--   Added fuzzy search using [fuse.js](https://fusejs.io/) => Needs some attention though
--   Search results are now highlighted
-
-Version `0.1.5` was deployed on **09th December, 2022**
-
-### 0.1.4
-
-Added build and deployment pipelines. When pushing on the respective branch (`production`), a GitHub action is triggered.
-
-Version `0.1.4` was deployed on **05th December, 2022**
-
-### 0.1.3
-
-All documents within the `doc` folder are automatically keyworded. After the script finishes, `.src/assets/Scripts/indexing_docs_directory.js` may be updated and there will be a new commit on `main`. When pushing on the respective branch (`main`), a GitHub action is triggered.
-
-Other changes made:
-
--   It is no longer possible to scroll the background when the navigation is open
--   Git documentation updated
--   Search bar is automatically focused when opening search
--   Code for buttons has been swapped out
--   Last search has been added
-
-Version `0.1.3` was deployed on **02th December, 2022**
-
-### 0.1.2
-
-A search has been added, this can be accessed via the navigation.
-
-Other changes made:
-
--   An animation has been added to the closed navigation
--   For better readability, the size of the rendered markdown files has been limited to a maximum of `900px`
-
-Version `0.1.2` was deployed on **29th November, 2022**
-
-### 0.1.1
-
-Added [Git basics](?path=src/docs/version-control/basics.md) and [branching](?path=src/docs/version-control/branching.md) documentation.
-
-Other changes made:
-
--   Skeleton style refactored
--   Provided path to markdown file via URL query parameters to allow reloading and sharing
--   Code in rendered Markdown files highlighted with [Highlight.js](https://highlightjs.org/)
--   Navigation closes as soon as a link is clicked or when you click outside the navigation
-
-Version `0.1.1` was deployed on **28th November, 2022**
-
-### 0.1.0
-
-The first very sketchy version with almost all basic implementations.
-
-Version `0.1.0` was deployed on **27th November, 2022**
