@@ -3,6 +3,7 @@ import hljs from "highlight.js";
 import "highlight.js/scss/default.scss";
 
 const $markdown = new MarkdownIt({
+    html: true,
     highlight: function (str, lang) {
         if (lang && hljs.getLanguage(lang)) {
             try {

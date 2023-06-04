@@ -59,7 +59,6 @@
     .code-block-wrapper {
         .clipboard-wrapper {
             position: absolute;
-            pointer-events: all;
             width: calc(100% - $cs-padding * 2);
             height: calc(1rem + $cs-padding * 2);
             display: flex;
