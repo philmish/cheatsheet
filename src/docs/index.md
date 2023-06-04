@@ -44,84 +44,41 @@ Other changes made:
 
 Version `0.3.9` was deployed on **1st June, 2023**
 
-### 0.3.8
+<br>
+<br>
 
-Added docs:
+### Versions 0.3.0 - 0.3.8
 
--   [Node Version Manager (nvm)](<?path=src/docs/basics/node_version_manager_(nvm).md>)
+#### Features
 
-Other changes made:
+-   Add an imprint
+-   Fix navigation animation
+-   Add fragments beside each headline (only `h2` & `h3`)
+-   New responsive design
+-   Update `indexing_docs_directory.js`
+    -   Remove empty lines (Performance)
+    -   Remove all numbers by regex
+    -   Remove markdown-comments (description and preservedKeywords) before indexing
+-   Add a lodingspinner while loaging a new page
+-   Save theme in loacal store
 
--   Save Theme in Localstore
--   Update developers docs
+#### New documents in this versions
 
+-   [Virtual Envrionments](?path=src/docs/python/virtual_environment.md)
+-   [PIP scripts](?path=src/docs/python/pip_scripts.md)
+-   [PYPI packages](?path=src/docs/python/pypi_packages.md)
+
+#### Deploy history
+
+Version `0.3.0` was deployed on **27th December, 2022**  
+Version `0.3.1` was deployed on **29th December, 2022**  
+Version `0.3.2` was deployed on **6th January, 2023**  
+Version `0.3.3` was deployed on **25th January, 2023**  
+Version `0.3.4` was deployed on **31th January, 2023**  
+Version `0.3.5` was deployed on **01st February, 2023**  
+Version `0.3.6` was deployed on **02nd February, 2023**  
+Version `0.3.7` was deployed on **02nd February, 2023**  
 Version `0.3.8` was deployed on **30th May, 2023**
-
-### 0.3.7
-
-Loading spinner added while load new page
-
-Version `0.3.7` was deployed on **02nd February, 2023**
-
-### 0.3.6
-
-Added docs:
-
--   Python - pip Scripts
-
-Updated docs:
-
--   Version-control - Useful Scripts
-
-Version `0.3.6` was deployed on **02nd February, 2023**
-
-### 0.3.5
-
-Update indexing script.
-
--   Remove empty lines (Performance)
--   Remove all numbers by regex
--   Remove markdown-comments (description and preservedKeywords) before indexing
-
-Version `0.3.5` was deployed on **01st February, 2023**
-
-### 0.3.4
-
-New docs for python packaging.
-
-Version `0.3.4` was deployed on **31th January, 2023**
-
-### 0.3.3
-
-New docs for python venv's.
-
-Version `0.3.3` was deployed on **25th January, 2023**
-
-### 0.3.2
-
-New responsive design, for better usability.
-
-Version `0.3.2` was deployed on **6th January, 2023**
-
-### 0.3.1
-
-Added fragments beside each headline.
-
-Other changes made:
-
--   Fixed navigation drawer animation
-
-Version `0.3.1` was deployed on **29th December, 2022**
-
-### 0.3.0
-
-Added `imprint.md`, depending on these changes the indexing script has changed.
-
-Other changes made:
-
--   Updated `index.md`
-
-Version `0.3.0` was deployed on **27th December, 2022**
 
 <br>
 <br>
