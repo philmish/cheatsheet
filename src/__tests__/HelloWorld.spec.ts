@@ -1,11 +1,22 @@
-// import { describe, it, expect } from 'vitest'
+// import { describe, beforeEach, it, expect, vi } from 'vitest'
+// import { setActivePinia, createPinia } from 'pinia'
+// import { useMainStore } from '../stores'
 
 // import { mount } from '@vue/test-utils'
-// import HelloWorld from '../HelloWorld.vue'
+// import ApplicationBar from "../components/bars/ApplicationBar.vue";
 
-// describe('HelloWorld', () => {
+
+
+// describe('ApplicationBar', () => {
+//   beforeEach(() => {
+//     // creates a fresh pinia and make it active so it's automatically picked
+//     // up by any useStore() call without having to pass it to it:
+//     // `useStore(pinia)`
+//     setActivePinia(createPinia())
+//   })
+
 //   it('renders properly', () => {
-//     const wrapper = mount(HelloWorld, { props: { msg: 'Hello Vitest' } })
-//     expect(wrapper.text()).toContain('Hello Vitest')
+//     const wrapper = mount(ApplicationBar)
+//     expect(wrapper.text()).toContain('Cheat-Sheet')
 //   })
 // })
