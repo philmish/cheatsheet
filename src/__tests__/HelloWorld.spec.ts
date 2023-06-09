@@ -5,8 +5,6 @@
 // import { mount } from '@vue/test-utils'
 // import ApplicationBar from "../components/bars/ApplicationBar.vue";
 
-
-
 // describe('ApplicationBar', () => {
 //   beforeEach(() => {
 //     // creates a fresh pinia and make it active so it's automatically picked

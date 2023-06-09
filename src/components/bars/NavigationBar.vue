@@ -4,8 +4,8 @@ import indexedDocsDirectory from "@/assets/json/indexed_docs_directory.json"; //
 const emit = defineEmits(["pathUpdated"]);
 
 function setPathInURL(path) {
-    window.history.replaceState(null, document.title, `?path=${path}`);
-    emit("pathUpdated");
+  window.history.replaceState(null, document.title, `?path=${path}`);
+  emit("pathUpdated");
 }
 </script>
 

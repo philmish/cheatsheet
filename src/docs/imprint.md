@@ -1,15 +1,19 @@
 # Imprint
+
 ### Address
+
 **Patrick Maul**  
 Gemündener Straße 16  
 60599 Frankfurt am Main  
 Telefon +49 151 21011272  
-E-mail: maulpatrick1996@gmail.com  
+E-mail: maulpatrick1996@gmail.com
 
 ### Responsible in the sense of § 55 RStV
+
 See [adress](#address).
 
 ### Disclaimer
+
 Despite careful control of the content, we assume no liability
 for the content of external links. For the content of the linked pages
 are solely responsible for their operators. The linked ones
