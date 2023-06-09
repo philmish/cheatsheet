@@ -1,7 +1,9 @@
 <script setup>
-import indexedDocsDirectory from "@/assets/json/indexed_docs_directory.json"; // Generated file with indexed docs dict
+// Utils
+import { useMainStore } from "../../stores";
 
 const emit = defineEmits(["pathUpdated"]);
+const store = useMainStore();
 
 function setPathInURL(path) {
   window.history.replaceState(null, document.title, `?path=${path}`);
@@ -12,7 +14,7 @@ function setPathInURL(path) {
 <template lang="pug">
 v-navigation-drawer(expand-on-hover rail permanent)
   v-list(nav)
-    v-list-group(v-for="group in indexedDocsDirectory" :key="group.title")
+    v-list-group(v-for="group in store.getDocuments" :key="group.title")
       template(v-slot:activator="{ props }")
         v-list-item(v-bind="props" :prepend-icon="group.icon" :title="group.title")
       v-list-item(v-for="item in group.links" :key="item.title" :title="item.title" @click="setPathInURL(item.path)")

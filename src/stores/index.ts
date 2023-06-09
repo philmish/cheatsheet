@@ -1,10 +1,11 @@
 import { defineStore } from "pinia";
-import indexedDocs from "../assets/json/indexed_docs_directory.json";
+import indexedDocs from "../assets/json/indexed_docs_directory.json"; // Generated file with indexed docs dict
 
 export const useMainStore = defineStore("main", {
   state: () => ({
     app: {
-      loadingSpinner: false
+      loadingSpinner: false,
+      documents: indexedDocs
     },
     search: {
       state: false,
@@ -14,6 +15,7 @@ export const useMainStore = defineStore("main", {
   }),
   getters: {
     getLoadingSpinnerState: (state) => state.app.loadingSpinner,
+    getDocuments: (state) => state.app.documents,
     getSearchState: (state) => state.search.state,
     getSearchValues: (state) => state.search.values,
     getSearchRecentSearch: (state) => state.search.recentSearch
