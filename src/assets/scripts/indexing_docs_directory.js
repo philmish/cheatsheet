@@ -4,6 +4,14 @@ const path = require("path");
 const lemmatizer = require("node-lemmatizer");
 const natural = require("natural");
 
+const icons = {
+    basics: "mdi-pizza",
+    python: "mdi-pizza",
+    technology: "mdi-pizza",
+    tools: "mdi-tools",
+    "version-control": "mdi-git",
+};
+
 // This is the "result" array
 const indexedDocs = [];
 
@@ -41,6 +49,9 @@ subdirectoryPaths.forEach((subdirectory) => {
     }
     indexedDocs.push({
         title: formatTitle(subdirectory.replace("./src/docs/", "")),
+        icon: icons[subdirectory.replace("./src/docs/", "")]
+            ? icons[subdirectory.replace("./src/docs/", "")]
+            : "mdi-pizza",
         links: indexedSubdirectoryDocuments,
     });
     console.log(`======================================`);

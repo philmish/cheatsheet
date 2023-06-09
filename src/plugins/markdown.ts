@@ -2,9 +2,9 @@ import MarkdownIt from "markdown-it";
 import hljs from "highlight.js";
 import "highlight.js/scss/default.scss";
 
-const $markdown = new MarkdownIt({
+const markdown = new MarkdownIt({
     html: true,
-    highlight: function (str, lang) {
+    highlight: function (str: string, lang: string) {
         if (lang && hljs.getLanguage(lang)) {
             try {
                 return hljs.highlight(str, { language: lang }).value;
@@ -17,4 +17,4 @@ const $markdown = new MarkdownIt({
     },
 });
 
-export default $markdown;
+export default markdown;

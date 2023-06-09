@@ -1,91 +1,71 @@
-# Cheat sheet | Readme
-> A cheat sheet is a condensed reference guide that provides quick and easy access to key information on a specific subject or task. Cheat sheets can be particularly useful for learners or professionals who need to quickly refresh their knowledge or learn new skills, as they provide a quick and easy way to access key information in a condensed format.[^1]
+# cheat_sheet
 
-## Table of contents
-- [Cheat sheet | Readme](#cheat-sheet--readme)
-  - [Table of contents](#table-of-contents)
-  - [Development setup](#development-setup)
-  - [Rules for developers](#rules-for-developers)
-  - [Tips and must have's for writing a sheet](#tips-and-must-haves-for-writing-a-sheet)
-    - [Description and Preserved Keywords](#description-and-preserved-keywords)
-    - [Internal links](#internal-links)
-  - [How to's](#how-tos)
-    - [Generate new index](#generate-new-index)
-  - [Deployment](#deployment)
-  - [Testing \& Linting](#testing--linting)
-    - [Run Unit Tests with Vitest](#run-unit-tests-with-vitest)
-    - [Lint with ESLint](#lint-with-eslint)
-## Development setup
-Steps for setting up the Project:
-1. Clone [the repository](https://github.com/PatrickMaul/cheatsheet)
-   - `git clone https://github.com/PatrickMaul/cheatsheet`
-2. Change to project directory.
-   - `cd cheatsheet`
-3. Install dependencies.
-   - `npm install`
-4. Duplicate and rename `config-example.json` to `config.json`
-5. Set your own config
-   1. `development` => No impact at all
-   2. `branch` => Current feature branch
-6. Start development server.
-   - `npm run dev`
-## Rules for developers
-To ensure that this repository is always **neat and tidy**, a few **simple but important rules** have been established.  
-Changes **made without** following these rules **will not be merged**.
-1. **Always** work on a feature branch, preferably related to an [issue on GitHub](https://github.com/PatrickMaul/cheatsheet/issues).
-   1. Relating to an [issue on GitHub](https://github.com/PatrickMaul/cheatsheet/issues)
-      - [ISSUE_ID]-[LOWERCASED_ISSUE_NAME_SPLIT_BY_HYPHENS]  
-      e.g.: `36-update-locale-readme-for-developers`
-      - Or use "Create a branch" function from GitHub
-   2. Otherwise
-      - Write an [issue on GitHub](https://github.com/PatrickMaul/cheatsheet/issues) and follow 1.
-      - Branch patterns
-        - IDEA-[LOWERCASED_SHORT_DESCRIPTION_SPLIT_BY_HYPHENS]
-        - HOTFIX-[LOWERCASED_SHORT_DESCRIPTION_SPLIT_BY_HYPHENS]
-        - DOC-[LOWERCASED_SHORT_DESCRIPTION_SPLIT_BY_HYPHENS]
+This template should help get you started developing with Vue 3 in Vite.
 
-**Please try following these rules.**
-## Tips and must have's for writing a sheet
-### Description and Preserved Keywords
-Both have to look exactly like this:
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
-[description]: <> (YOUR DESCRIPTION GOES HERE)
-[preservedKeywords]: <> (YOUR PRESERVED COMMA SEPARATED KEYWORDS)
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
-You write your values between the brackets.  
-**Do not change these order!**  
-**Place this always on top of the `.md` file!**
-### Internal links
-Use `[Link name](?path=path/to/document.md)` to link another file inside `./src/docs/`.
-## How to's
-Here you can find some how-to's you may need during develop.
-### Generate new index
-**The resulting file `indexed_docs_directory.json` should not be pushed.**  
-Open terminal from project directory and use "`node ./src/assets/scripts/indexing_docs_directory.js`" to generate a new index from `src/docs/`.
-## Deployment
-**Only the repo owner and selected collaborators** are authorized to deploy new versions. A new feature can only be built into a new version via a feature branch that was previously merged into the `main`!  
-New versions are built by **merging `main` into `production`**. If necessary, a last commit is pushed to `main`, which at most updates the changelog in `./src/docs/index.md`.
 
-Steps to deploy new versions:
-1. Check changelog, update if necessary.
-     - Commit message => `update: changelog for version [`[SEMANTIC_VERSIONING](https://semver.org/)`]`
-2. Request from `main` to `production`
-     - Merge title => [SEMANTIC_VERSIONING](https://semver.org/)
-3. Merge
-4. Wait for GitHub actions
-   - Automatically triggered when push to `production`
+### Type-Check, Compile and Minify for Production
 
-## Testing & Linting
+```sh
+npm run build
+```
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
+
 ```sh
 npm run test:unit
 ```
 
+### Run End-to-End Tests with [Playwright](https://playwright.dev)
+
+```sh
+# Install browsers for the first run
+npx playwright install
+
+# When testing on CI, must build the project first
+npm run build
+
+# Runs the end-to-end tests
+npm run test:e2e
+# Runs the tests only on Chromium
+npm run test:e2e -- --project=chromium
+# Runs the tests of a specific file
+npm run test:e2e -- tests/example.spec.ts
+# Runs the tests in debug mode
+npm run test:e2e -- --debug
+```
+
 ### Lint with [ESLint](https://eslint.org/)
+
 ```sh
 npm run lint
 ```
-
-
-
-[^1]: [ChatGTP](https://chat.openai.com/chat), Request: "can you describe a cheat sheet for me?" (December 21th, 2022)

@@ -2,15 +2,19 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
-    root: true,
-    extends: ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/eslint-config-prettier"],
-    parserOptions: {
-        ecmaVersion: "latest",
-    },
-    rules: {
-        "no-unused-vars": "off",
-        "no-useless-escape": "off",
-        "vue/no-mutating-props": "off",
-        "vue/prefer-import-from-vue": "off",
-    },
+  root: true,
+  extends: [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "@vue/eslint-config-typescript",
+    "@vue/eslint-config-prettier/skip-formatting"
+  ],
+  parserOptions: {
+    ecmaVersion: "latest"
+  },
+  rules: {
+    // Note: you must disable the base rule as it can report incorrect errors
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
 };
