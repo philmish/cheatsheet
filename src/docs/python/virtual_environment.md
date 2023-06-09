@@ -2,16 +2,23 @@
 [preservedKeywords]: <> (python, development environment, dependencies management)
 
 # Virtual Environment
+
 ## Install `venv`
+
 For MacOS:
+
 ```sh
 python3 -m venv venv
 ```
+
 ## Activate `venv`
+
 For MacOS:
+
 ```sh
 . venv/bin/activate
 ```
 
 ## Used resources
+
 - [Flask website](https://flask.palletsprojects.com/en/2.2.x/installation/#virtual-environments) (January 25th, 2023)

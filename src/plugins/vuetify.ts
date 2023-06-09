@@ -1,20 +1,20 @@
 /**
  * Vuetify3 Plugin
  */
-import { createVuetify, type VuetifyOptions } from 'vuetify';
-import * as components from 'vuetify/components';
-import * as directives from 'vuetify/directives';
+import { createVuetify, type VuetifyOptions } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
 // import * as labsComponents from 'vuetify/labs/components';
-import { aliases, mdi } from 'vuetify/iconsets/mdi';
+import { aliases, mdi } from "vuetify/iconsets/mdi";
 // Translations provided by Vuetify
 // import { en } from 'vuetify/locale';
 
 // Misc
-import { loadFonts } from '@/plugins/webfontloader';
+import { loadFonts } from "@/plugins/webfontloader";
 
 // Styles
-import 'vuetify/styles';
-import '@mdi/font/css/materialdesignicons.css';
+import "vuetify/styles";
+import "@mdi/font/css/materialdesignicons.css";
 
 await loadFonts();
 
@@ -24,11 +24,11 @@ const vuetifyConfig: VuetifyOptions = {
   // Icon Fonts
   // https://vuetifyjs.com/en/features/icon-fonts/
   icons: {
-    defaultSet: 'mdi',
+    defaultSet: "mdi",
     aliases,
     sets: {
-      mdi,
-    },
+      mdi
+    }
   },
   // // Internationalization (i18n)
   // // https://vuetifyjs.com/en/features/internationalization/#internationalization-i18n
@@ -40,11 +40,11 @@ const vuetifyConfig: VuetifyOptions = {
   // Theme
   // https://vuetifyjs.com/en/features/theme/
   theme: {
-    defaultTheme: 'dark',
+    defaultTheme: "dark"
   },
   components,
   directives
 };
 
 const vuetify = createVuetify(vuetifyConfig);
-export default vuetify
+export default vuetify;

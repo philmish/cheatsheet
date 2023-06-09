@@ -2,7 +2,9 @@
 [preservedKeywords]: <> (ssh, ssh-keygen, rsa, OpenSSH)
 
 # SSH - Remote Login
+
 ## What is SSH ?
+
 SSH is a remote login utility, used to connect to remote hosts running an SSH server.
 It can also be used to move files between hosts via [rsync](https://linux.die.net/man/1/rsync).
 Depending on the server's configuration you can login with a password or a ssh key.
@@ -10,22 +12,25 @@ Depending on the server's configuration you can login with a password or a ssh k
 ## Basic Commands
 
 Connecting to a remote host.
+
 ```sh
 ssh <user>@<host-address>
 ```
 
 Connectiong using a specific ssh key (private Key).
+
 ```sh
 ssh -i <path-to-private-key> <user>@<host-address>
 ```
 
 ## SSH Keys
+
 Most of the time authenticating with the remote host is done via private-public key pairs.
-These key pairs are calculated by cryptographic algorithms, like [rsa](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+These key pairs are calculated by cryptographic algorithms, like [rsa](<https://en.wikipedia.org/wiki/RSA_(cryptosystem)>)
 Different algorithms offer different levels of security.
 
-
 If you want to generate a pair of keys use the ssh-keygen command:
+
 ```sh
 ssh-keygen
 ```
@@ -40,10 +45,12 @@ This will be a password you would need to enter everytime you want to authentica
 You can leave this empty if you want to, even though it adds an additional layer of security.
 
 If you want to use a different algorithm it can be specified via the -t flag, for example:
-```sh 
+
+```sh
 # This generates a eliptic curve based keypair. It is a viable alternative to RSA.
 ssh-keygen -t ed25519
 ```
+
 After completing the process you will be able to use the generated keypair.
 
 ### How to use the keys
@@ -77,6 +84,7 @@ Host server2
 ```
 
 This makes it possible to connect to the servers with the short command:
+
 ```sh
 # Uses config for server1
 ssh server1
@@ -87,5 +95,6 @@ ssh server2
 ```
 
 ## Used resources
+
 - [SSH Docs](https://man7.org/linux/man-pages/man1/ssh.1.html)
 - [Linuxize Article](https://linuxize.com/post/using-the-ssh-config-file/)

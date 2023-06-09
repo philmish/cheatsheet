@@ -1,15 +1,15 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App.vue'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
 
 import { vuetify, http } from "./plugins";
-import "./assets/style/app.scss"
+import "./assets/style/app.scss";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(vuetify)
+app.use(createPinia());
+app.use(vuetify);
 
-app.provide("http", http)
+app.provide("http", http);
 
-app.mount('#app')
+app.mount("#app");
