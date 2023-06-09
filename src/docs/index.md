@@ -12,19 +12,20 @@ Since the cheat sheet was developed for private use only, we apologize for any i
 
 Records the history of all changes made to the project.
 
-### 0.3.12 => Currently under development
+### 0.4.1 => Currently under development
 
 Upcoming features:
 
--   Writing tests and adding github test action
--   Hopefully new docs
+- Writing tests and adding github test action
+- Hopefully new docs
 
-### 0.3.11
+### 0.4.0
 
 Add some markdown style improvments.  
 Fix copy button position
+Rewritten the whole project in TypeScript ansd with Vuetify.
 
-Version `0.3.11` was deployed on **XXX June, 2023**
+Version `0.4.0` was deployed on **9 June, 2023**
 
 ### 0.3.10
 
@@ -36,11 +37,11 @@ Version `0.3.10` was deployed on **3rd June, 2023**
 
 Added docs:
 
--   [SSH](?path=src/docs/tools/ssh.md)
+- [SSH](?path=src/docs/tools/ssh.md)
 
 Other changes made:
 
--   Update deploy workflow
+- Update deploy workflow
 
 Version `0.3.9` was deployed on **1st June, 2023**
 
@@ -51,22 +52,22 @@ Version `0.3.9` was deployed on **1st June, 2023**
 
 #### Features
 
--   Add an imprint
--   Fix navigation animation
--   Add fragments beside each headline (only `h2` & `h3`)
--   New responsive design
--   Update `indexing_docs_directory.js`
-    -   Remove empty lines (Performance)
-    -   Remove all numbers by regex
-    -   Remove markdown-comments (description and preservedKeywords) before indexing
--   Add a lodingspinner while loaging a new page
--   Save theme in loacal store
+- Add an imprint
+- Fix navigation animation
+- Add fragments beside each headline (only `h2` & `h3`)
+- New responsive design
+- Update `indexing_docs_directory.js`
+  - Remove empty lines (Performance)
+  - Remove all numbers by regex
+  - Remove markdown-comments (description and preservedKeywords) before indexing
+- Add a lodingspinner while loaging a new page
+- Save theme in loacal store
 
 #### New documents in this versions
 
--   [Virtual Envrionments](?path=src/docs/python/virtual_environment.md)
--   [PIP scripts](?path=src/docs/python/pip_scripts.md)
--   [PYPI packages](?path=src/docs/python/pypi_packages.md)
+- [Virtual Envrionments](?path=src/docs/python/virtual_environment.md)
+- [PIP scripts](?path=src/docs/python/pip_scripts.md)
+- [PYPI packages](?path=src/docs/python/pypi_packages.md)
 
 #### Deploy history
 
@@ -87,16 +88,16 @@ Version `0.3.8` was deployed on **30th May, 2023**
 
 #### Features
 
--   Add this landingpage an da `README.md` file for other developers
--   Do some style improvements
--   Update the document title tag for each page
--   Fix a bug in search
+- Add this landingpage an da `README.md` file for other developers
+- Do some style improvements
+- Update the document title tag for each page
+- Fix a bug in search
 
 #### New documents in this versions
 
--   [Homebrew](?path=src/docs/basics/homebrew.md)
--   [Node.js](?path=src/docs/basics/node.js.md)
--   [Node Version Manager (nvm)](<?path=src/docs/basics/node_version_manager_(nvm).md>)
+- [Homebrew](?path=src/docs/basics/homebrew.md)
+- [Node.js](?path=src/docs/basics/node.js.md)
+- [Node Version Manager (nvm)](<?path=src/docs/basics/node_version_manager_(nvm).md>)
 
 #### Deploy history
 
@@ -110,19 +111,19 @@ Version `0.2.1` was deployed on **25th December, 2022**
 
 #### Features
 
--   Basic implementation (UI & functions)
--   Highlightling und rendering markdown files from GitHub
--   Search through docs with fuzzy search
--   Generate keywords for each document by push on `main` branch
--   Setting up the build & deploy pipeline
--   Add a copy buttons to code blocks for easier copy the whole code
+- Basic implementation (UI & functions)
+- Highlightling und rendering markdown files from GitHub
+- Search through docs with fuzzy search
+- Generate keywords for each document by push on `main` branch
+- Setting up the build & deploy pipeline
+- Add a copy buttons to code blocks for easier copy the whole code
 
 #### New documents in this versions
 
--   [Git - Basics](?path=src/docs/version-control/basics.md)
--   [Git - Branching](?path=src/docs/version-control/branching.md)
--   [Git - Useful scripts](?path=src/docs/version-control/branching.md)
--   [Vue.js](?path=src/docs/version-control/branching.md)
+- [Git - Basics](?path=src/docs/version-control/basics.md)
+- [Git - Branching](?path=src/docs/version-control/branching.md)
+- [Git - Useful scripts](?path=src/docs/version-control/branching.md)
+- [Vue.js](?path=src/docs/version-control/branching.md)
 
 #### Deploy history
 

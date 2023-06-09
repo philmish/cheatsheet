@@ -9,7 +9,7 @@ const emit = defineEmits(["pathUpdated", "update:appTheme"]);
 const store = useMainStore();
 
 function resetURLState() {
-  window.history.replaceState(null, document.title, "/Cheat-Sheet/");
+  window.history.replaceState(null, document.title, "/cheatsheet/");
   emit("pathUpdated");
 }
 
