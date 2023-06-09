@@ -14,9 +14,9 @@ Markdown supports both unordered and ordered lists:
 
 ### Unordered List
 
--   Item 1
--   Item 2
--   Item 3
+- Item 1
+- Item 2
+- Item 3
 
 ### Ordered List
 
@@ -65,10 +65,14 @@ Markdown supports creating tables:
 
 ## Strikethrough
 
-You can strike through text.
+You can ~~strike through~~ text.
 
-## Conclusion
+## Super- & Subscripted Texts
 
-That concludes our exploration of Markdown's features. Markdown is a versatile and easy-to-use markup language for creating formatted documents.
+### Superscript
 
-Happy Markdown writing!
+This is an example of text <sup>superscript</sup>.
+
+### Subscript
+
+This is an example of text <sub>subscript</sub>.

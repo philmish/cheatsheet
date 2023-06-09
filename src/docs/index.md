@@ -21,34 +21,22 @@ Upcoming features:
 
 ### 0.4.0
 
-Add some markdown style improvments.  
-Fix copy button position
-Rewritten the whole project in TypeScript ansd with Vuetify.
+#### Features
+
+- Add some markdown style improvments.
+- Fix copy button position (again...)
+- Rewritten the whole project in TypeScript ansd with Vuetify.
+
+#### New documents in this versions
+
+None
 
 Version `0.4.0` was deployed on **9 June, 2023**
 
-### 0.3.10
-
-Add Pinia store and fix copy button position while scrolling inside code blocks.
-
-Version `0.3.10` was deployed on **3rd June, 2023**
-
-### 0.3.9
-
-Added docs:
-
-- [SSH](?path=src/docs/tools/ssh.md)
-
-Other changes made:
-
-- Update deploy workflow
-
-Version `0.3.9` was deployed on **1st June, 2023**
-
 <br>
 <br>
 
-### Versions 0.3.0 - 0.3.8
+### Versions 0.3.0 - 0.3.10
 
 #### Features
 
@@ -62,12 +50,16 @@ Version `0.3.9` was deployed on **1st June, 2023**
   - Remove markdown-comments (description and preservedKeywords) before indexing
 - Add a lodingspinner while loaging a new page
 - Save theme in loacal store
+- Update deploy workflow
+- Add Pinia store
+- Fix copy button position while scrolling inside code blocks
 
 #### New documents in this versions
 
 - [Virtual Envrionments](?path=src/docs/python/virtual_environment.md)
 - [PIP scripts](?path=src/docs/python/pip_scripts.md)
 - [PYPI packages](?path=src/docs/python/pypi_packages.md)
+- [SSH - Remote Login](?path=src/docs/tools/ssh.md)
 
 #### Deploy history
 
@@ -79,7 +71,9 @@ Version `0.3.4` was deployed on **31th January, 2023**
 Version `0.3.5` was deployed on **01st February, 2023**  
 Version `0.3.6` was deployed on **02nd February, 2023**  
 Version `0.3.7` was deployed on **02nd February, 2023**  
-Version `0.3.8` was deployed on **30th May, 2023**
+Version `0.3.8` was deployed on **30th May, 2023**  
+Version `0.3.9` was deployed on **1st June, 2023**  
+Version `0.3.10` was deployed on **3rd June, 2023**
 
 <br>
 <br>
