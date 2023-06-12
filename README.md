@@ -20,20 +20,29 @@
 
 ## Development setup
 
-Steps for setting up the Project:
+To contribute to this project, just follow these simple steps:
 
-1. Clone [the repository](https://github.com/PatrickMaul/cheatsheet)
-   - `git clone https://github.com/PatrickMaul/cheatsheet`
-2. Change to project directory.
-   - `cd cheatsheet`
-3. Install dependencies.
-   - `npm install`
-4. Duplicate and rename `config-example.json` to `config.json`
-5. Set your own config
-   1. `development` => No impact at all
-   2. `branch` => Current feature branch
-6. Start development server.
-   - `npm run dev`
+```shell
+# Clone repository
+git clone https://github.com/PatrickMaul/cheatsheet
+
+# Change directory & install dependencies
+cd cheatsheet
+npm install
+
+# Add `./src/config.json` manually
+# `development` => No impact at all
+# `branch` => Current feature branch
+
+# or
+
+# Generate `config.json`
+git checkout -b <NEW_BRANCHNAME>
+npm run set_dev_config
+
+# Start development server
+npm run dev
+```
 
 ## Rules for developers
 
@@ -52,8 +61,6 @@ Changes **made without** following these rules **will not be merged**.
         - HOTFIX-[LOWERCASED_SHORT_DESCRIPTION_SPLIT_BY_HYPHENS]
         - DOC-[LOWERCASED_SHORT_DESCRIPTION_SPLIT_BY_HYPHENS]
 
-**Please try following these rules.**
-
 ## Tips and must have's for writing a sheet
 
 ### Description and Preserved Keywords
@@ -69,18 +76,18 @@ You write your values between the brackets.
 **Do not change these order!**  
 **Place this always on top of the `.md` file!**
 
-### Internal links
-
-Use `[Link name](?path=path/to/document.md)` to link another file inside `./src/docs/`.
-
 ## How to's
 
 Here you can find some how-to's you may need during develop.
 
+### Internal links
+
+Use `[Link name](?path=path/to/document.md)` to link another file inside `./src/docs/`.
+
 ### Generate new index
 
 **The resulting file `indexed_docs_directory.json` should not be pushed.**  
-Open terminal from project directory and use "`node ./src/assets/scripts/indexing_docs_directory.js`" to generate a new index from `src/docs/`.
+Open terminal from project directory and use `node ./src/assets/scripts/indexing_docs_directory.js` to generate a new index from `src/docs/`.
 
 ## Deployment
 
