@@ -18,6 +18,14 @@ v-navigation-drawer(expand-on-hover rail permanent)
       template(v-slot:activator="{ props }")
         v-list-item(v-bind="props" :prepend-icon="group.icon" :title="group.title")
       v-list-item(v-for="item in group.links" :key="item.title" :title="item.title" @click="setPathInURL(item.path)")
-  
-  v-list-item(prepend-icon="mdi-information-box-outline" title="Imprint" @click="setPathInURL('src/docs/imprint.md')")
+  v-spacer
+  v-list(nav)
+    v-list-item(prepend-icon="mdi-information-box-outline" title="Imprint" @click="setPathInURL('src/docs/imprint.md')")
 </template>
+
+<style lang="scss">
+.v-navigation-drawer__content {
+  display: flex;
+  flex-direction: column;
+}
+</style>
